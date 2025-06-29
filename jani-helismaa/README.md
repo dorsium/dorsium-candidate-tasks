@@ -1,6 +1,6 @@
-### Task: Simple NestJS API
+### Task: Simple NextJS API
 
-Build a small NestJS API with the following endpoints:
+Build a small NextJS API with the following endpoints:
 
 1. GET /badges/:userId  
    → Returns a list of NFT badge objects with `id`, `name`, `image`, `awardedAt`.
