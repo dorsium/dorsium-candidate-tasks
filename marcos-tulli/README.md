@@ -1,33 +1,54 @@
-### Task
+# Dorsium RPC Gateway
 
-Create a new public /status endpoint in the Dorsium RPC Gateway that returns the current API version, timestamp, and mode.
+This repository contains the Node.js + TypeScript-based API middleware between the Dorsium blockchain and its clients (web, mobile, miner).
 
-Requirements
+## Description
 
-Route: `GET /status`
+The RPC Gateway acts as a bridge between the Cosmos-based Dorsium blockchain and all client applications. It provides secure, rate-limited REST APIs for accessing wallet data, submitting mining proofs, and retrieving NFT status, while abstracting the complexity of the blockchain layer.
 
-### Response:
+## Features
+
+- RESTful endpoints for wallet, mining, and NFT access  
+- Mock and live modes for development and production  
+- Cosmos RPC and gRPC integration ready  
+- Token-based authentication and optional wallet signature verification  
+- Modular TypeScript architecture with middleware layers
+
+## Project Structure
 
 ```
-json
-{
-  "status": "ok",
-  "version": "0.1.0",
-  "timestamp": "<current UTC ISO timestamp>",
-  "mode": "mock" // from config or env var
-}
+dorsium-rpc-gateway/
+├── src/
+│   ├── api/                # Route handlers
+│   │   ├── mining/
+│   │   ├── user/
+│   │   └── blockchain/
+│   ├── services/           # Logic layer
+│   ├── middleware/         # Auth, errors, rate limiters
+│   ├── utils/              # Utility functions
+│   ├── config/             # App config and mode
+│   ├── types/              # TypeScript types
+│   └── index.ts            # Entrypoint
+├── tests/                  # Jest + Supertest
+├── .env
+├── tsconfig.json
+├── package.json
+└── README.md
 ```
 
-Add code in src/api/status/index.ts
+## Setup (Dev)
 
-If needed, create or update src/config.ts to hold the version and mode
+```bash
+npm install
+npm run dev
+```
 
-Register the route properly in the app’s router
+## License
 
-**Optional:** write a simple Jest test
+This project is licensed under a custom Non-Commercial Contributor License.
 
-This helps us test basic uptime and config. No auth needed.
+- You may view and contribute to the codebase.
+- You may **not** use the code for personal or commercial purposes.
+- This repository is public for transparency only.
 
-Deadline: ideally in 3–4 days
-Compensation: 300 DORS (off-chain, claimable after December)
-Submit as: GitHub PR from your own branch
+For inquiries or collaboration requests, contact the Dorsium team.
