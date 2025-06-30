@@ -1,1 +1,5 @@
-// Entry point placeholder. Exports will be added here later.
+export const getConfig = () => ({
+  version: '0.1.0',                         
+  mode: process.env.MODE || 'mock'          
+});
+
