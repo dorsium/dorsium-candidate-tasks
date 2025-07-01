@@ -1,3 +1,4 @@
+
 # Dorsium RPC Gateway
 
 This repository contains the Node.js + TypeScript-based API middleware between the Dorsium blockchain and its clients (web, mobile, miner).
@@ -42,6 +43,27 @@ dorsium-rpc-gateway/
 npm install
 npm run dev
 ```
+
+## API Documentation (Swagger)
+
+This project includes **OpenAPI (Swagger) documentation** to describe the available REST API endpoints.
+
+- The OpenAPI specification file is located at: `openapi.yaml`
+- The Swagger UI is served at the endpoint:  
+  `http://localhost:8080/rpc-gateway-docs`
+
+You can visit this URL in your browser to explore and interact with the API endpoints visually.
+
+### How it works:
+
+- The API documentation is defined in a YAML file (`openapi.yaml`) following the OpenAPI 3.0 specification.
+- The `swagger-ui-express` middleware serves this spec with a user-friendly web interface.
+- This helps developers understand available routes, request parameters, and response schemas.
+
+### To update the docs:
+
+1. Edit the `openapi.yaml` file to reflect changes in the API.
+2. Restart the server to reload the updated documentation.
 
 ## License
 
