@@ -1,18 +1,36 @@
-### Task: Simple NestJS API
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Build a small NestJS API with the following endpoints:
+## Getting Started
 
-1. GET /badges/:userId  
-   → Returns a list of NFT badge objects with `id`, `name`, `image`, `awardedAt`.
+First, run the development server:
 
-2. POST /wallets  
-   → Accepts: { "userId": "abc123", "address": "0x1234...abcd" }
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- Use in-memory storage  
-- Bonus: validation, Jest test, Swagger or Postman doc
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
----
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Deadline: ideally in 3–4 days  
-Compensation: 300 DORS (off-chain, claimable after December)  
-Submit as GitHub repo or ZIP link
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
