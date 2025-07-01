@@ -1,0 +1,30 @@
+{
+  "name": "dorsium-candidate-tasks",
+  "version": "1.0.0",
+  "description": "A simple Express.js API to simulate a user badge and wallet system.",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoni-gabriel/dorsium-candidate-tasks.git"
+  },
+  "author": "Antoni Gabriel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoni-gabriel/dorsium-candidate-tasks/issues"
+  },
+  "homepage": "https://github.com/antoni-gabriel/dorsium-candidate-tasks#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.3",
+    "supertest": "^7.1.1"
+  }
+}
