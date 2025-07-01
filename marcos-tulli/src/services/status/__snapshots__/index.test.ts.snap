@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`StatusService matches snapshot shape 1`] = `
+{
+  "mode": "test",
+  "status": "ok",
+  "timestamp": Any<String>,
+  "version": "1.2.3",
+}
+`;
